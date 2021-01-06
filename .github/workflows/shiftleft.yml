@@ -36,7 +36,7 @@ jobs:
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
         SHIFTLEFT_API_HOST: www-ext.stg.shiftleft.io
-        SHIFTLEFT_GRPC_TELEMETRY_HOST: SL_EXTERNAL_GRPC_TELEMETRY_HOST_TOKEN
+        SHIFTLEFT_GRPC_TELEMETRY_HOST: api-ext.stg.shiftleft.io:443
         SHIFTLEFT_GRPC_API_HOST: api-ext.stg.shiftleft.io:443
   Build-Rules: 
     runs-on: ubuntu-latest
@@ -58,6 +58,6 @@ jobs:
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
         SHIFTLEFT_API_HOST: www-ext.stg.shiftleft.io
-        SHIFTLEFT_GRPC_TELEMETRY_HOST: SL_EXTERNAL_GRPC_TELEMETRY_HOST_TOKEN
+        SHIFTLEFT_GRPC_TELEMETRY_HOST: api-ext.stg.shiftleft.io:443
         SHIFTLEFT_GRPC_API_HOST: api-ext.stg.shiftleft.io:443 
   
